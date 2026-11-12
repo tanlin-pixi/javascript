@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Javascript Cơ Bản</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            max-width: 500px;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <h3>3.1.1. Tính lãi suất ngân hàng</h3>
+        <p>Nhập các thông tin bên dưới để tính lãi đơn:</p>
+        
+        <label>Số tiền (triệu đồng):</label>
+        <input type="number" id="soTien" placeholder="Ví dụ: 50">
+        
+        <label>Lãi suất (%/năm):</label>
+        <input type="number" id="laiSuat" placeholder="Ví dụ: 8">
+        
+        <label>Số năm (n):</label>
+        <input type="number" id="soNam" placeholder="Ví dụ: 2">
+        
+        <button onclick="tinhLaiSuat()">Tính tiền</button>
+        
+        <div class="result" id="ketQuaLaiSuat"></div>
+    </div>
+  </body>
+  </html>
